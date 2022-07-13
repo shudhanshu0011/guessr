@@ -1,0 +1,277 @@
+@font-face {
+  src: url(font/09c8fb44d2c62d99647e4ce58736293e.woff2);
+  font-family: HM;
+}
+body {
+  background: url(./images/ezgif.com-gif-maker.jpg) center fixed;
+  background-image: url(./images/ezgif.com-gif-maker.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  height: 800px;
+  width: 500px;
+  margin-top: 100px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.main-logo {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-logo img {
+  width: 100px;
+  height: 100px;
+}
+.main-logo span {
+  font-family: "Rubik Moonrocks", cursive;
+  color: white;
+  font-size: 100px;
+}
+.login-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#username {
+  height: 40px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: beige;
+  text-align: center;
+  font-family: HM;
+}
+.login-container button {
+  height: 46px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  font-family: HM;
+  background-color: rgb(0, 255, 0);
+  margin-left: 20px;
+}
+.login-container button:hover {
+  background-color: rgb(0, 199, 0);
+  cursor: pointer;
+}
+.main-container1 {
+  height: 800px;
+  width: 1300px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+.roundInfo {
+  height: 50px;
+  width: 305px;
+  border-radius: 5px;
+  margin-top: 15px;
+  position: relative;
+}
+.timer {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+}
+.content {
+  width: 100%;
+  height: 670px;
+  display: flex;
+}
+.mapbox {
+  width: 250px;
+  display: flex;
+  position: relative;
+}
+.image-container {
+  width: 800px;
+  height: 660px;
+  margin: 7px 7px 7px 7px;
+}
+.leaderboard {
+  margin-top: 7px;
+  width: 250px;
+  height: 660px;
+}
+.logo img {
+  padding-top: 10px;
+  height: 60px;
+}
+.logo1 {
+  font-family: "Rubik Moonrocks", cursive;
+  color: white;
+  padding-top: 5px;
+  font-size: 60px;
+}
+.map-area {
+  width: 100%;
+  height: 660px;
+  margin-top: 7px;
+  overflow: hidden;
+  resize: both;
+  position: absolute;
+}
+.guess-btn {
+  height: 100%;
+  width: 100%;
+}
+.guess-btn button {
+  margin-left: 50px;
+  margin-top: 610px;
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(78, 47, 255);
+  font-family: HM;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+.guess-btn button:hover {
+  background-color: rgb(12, 65, 238);
+  cursor: pointer;
+  font-size: 24px;
+}
+.base-timer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 6px;
+  stroke: #efefef;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 6px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: #39b37d;
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  top: 30px;
+  left: 92px;
+  display: flex;
+  font-family: HM;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 20x;
+  letter-spacing: 0.3px;
+}
+dialog {
+  width: 90%;
+  height: 200px;
+  max-width: 400px;
+  border: none;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5em;
+  position: relative;
+  scrollbar-width: thin;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+
+  text-align: center;
+  font-family: HM;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+dialog::backdrop {
+  background: black;
+  opacity: 0.5;
+}
+.leaderboard-header {
+  background-color: rgb(162, 83, 207);
+  color: white;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: HM;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 5px;
+}
+.player1 {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(70, 211, 145);
+  margin-top: 10px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: HM;
+  font-weight: bold;
+  font-size: 20px;
+}
+.updateRoundInfo {
+  background-color: red;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: HM;
+  font-weight: bold;
+  font-size: 25px;
+}

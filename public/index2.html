@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.01">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+    <title>Guessr - Free Multiplayer Game</title>
+    <link rel="icon" href="./images/placeholder.png">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <dialog class="modal" id="modal">
+      
+    </dialog>
+    <div class="main-container1">
+        <div style="display: flex;">
+          <div class="logo">
+            <img src="./images/placeholder.png" />
+            <span class="logo1">Guessr</span>
+            <div class="timer">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div id="revese-timer" data-minute="1"></div>
+                  </div>
+                </div>
+              </div> 
+            </div>            
+          </div>
+          <div class="roundInfo" id="roundInfo"></div>
+        </div>
+        
+        
+        <div class="content">
+            <div class="mapbox">
+                <div class="map-area">
+                  <div id="map" style="width: 1500px; height: 800px;"></div>
+                </div>
+            </div>
+            <div class="image-container" id="image-container">
+
+            </div>
+            <div class="leaderboard" id="leaderboard">
+                
+            </div>
+        </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"
+      integrity="sha512-uWKImujbh9CwNa8Eey5s8vlHDB4o1HhrVszkympkm5ciYTnUEQv3t4QHU02CUqPtdKTg62FsHo12x63q6u0wmg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/panolens.min.js"></script>
+    <script src="./user.js"></script>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
